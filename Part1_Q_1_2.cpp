@@ -40,6 +40,12 @@ int main(int argc, char *argv[]) {
     MPI_Finalize();
     return 0;
 }
+// mpic++ Part1_Q_1_2.cpp  -o ping_pong_q1
+// mpiexec -n 2 ./ping_pong_q1
+
 
 // Here we allocate the task on two different nodes:
+
 // salloc -N 2 --ntasks-per-node=1 --time=00:10:00
+// mpic++ Part1_Q_1_2.cpp -o ping_pong_q4
+// mpiexec -n 2 ./ping_pong_q4
