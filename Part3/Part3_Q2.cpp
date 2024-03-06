@@ -1,7 +1,9 @@
 #include <mpi.h>
 #include <iostream>
 #include <cstdlib>
-#include <cmath>
+#include <cmath> 
+#include <fstream> 
+using namespace std;
 
 int main(int argc, char *argv[]) {
     MPI_Init(&argc, &argv);
@@ -10,22 +12,46 @@ int main(int argc, char *argv[]) {
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
     MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
 
-    int random_message_size = std::atoi(argv[1]); 
-    int* message = new int[random_message_size / sizeof(int)];
-
-    for (int i = 0; i < random_message_size / sizeof(int); i++) {
-        message[i] = world_rank * random_message_size + i;
+    int message_size = std::atoi(argv[1]); 
+    int* message = new int[message_size / sizeof(int)]; 
+    
+    for (int i = 0; i < message_size / sizeof(int); i++) {
+        message[i] = world_rank * message_size + i;
     }
 
-    int* recv_buffer = new int[random_message_size / sizeof(int)];
+    int* recv_buffer = new int[message_size / sizeof(int)];
 
     int send_to = (world_rank + 1) % world_size;
     int recv_from = (world_rank - 1 + world_size) % world_size;
 
-    MPI_Sendrecv(message, random_message_size / sizeof(int), MPI_INT, send_to, 0,
-                 recv_buffer, random_message_size / sizeof(int), MPI_INT, recv_from, 0,
+    double start_time, end_time;
+
+    MPI_Barrier(MPI_COMM_WORLD);
+    start_time = MPI_Wtime();
+
+    MPI_Sendrecv(message, message_size / sizeof(int), MPI_INT, send_to, 0,
+                 recv_buffer, message_size / sizeof(int), MPI_INT, recv_from, 0,
                  MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
+    MPI_Barrier(MPI_COMM_WORLD);
+    end_time = MPI_Wtime();
+
+    for (int i = 0; i < world_size; ++i) {
+        MPI_Barrier(MPI_COMM_WORLD); 
+        if (world_rank == i) {
+            cout << "Message Size: " << message_size << " bytes" << endl;
+            cout << "Processes: " << world_size << endl;
+            cout << "Processe number : " << world_rank << endl;
+            cout << "Time Taken: " << (end_time - start_time) << " seconds" << endl;
+
+            double bandwidth = message_size / (end_time - start_time);
+            double latency = (end_time - start_time) / world_size;
+
+            cout << "Bandwidth: " << bandwidth << " bytes/second" << endl;
+            cout << "Latency: " << latency << " seconds" << endl;
+            cout << endl;
+        }
+    }
 
     delete[] message;
     delete[] recv_buffer;
