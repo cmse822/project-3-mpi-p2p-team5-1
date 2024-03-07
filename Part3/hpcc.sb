@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=ring_shift
 #SBATCH --time=01:00:00
-#SBATCH --partition=batch
 #SBATCH --nodes=2
-#SBATCH --ntasks-per-node=40
+#SBATCH --ntasks-per-node=32
+#SBATCH --constraint=intel18
 
 # Load necessary modules
 module purge
