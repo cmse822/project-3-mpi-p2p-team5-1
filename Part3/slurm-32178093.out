@@ -1,0 +1,525 @@
+Lmod Warning: Input module (gcc) not found, using module: GCC . . . (ICER v.) 
+
+
+Lmod Warning: Input module (openmpi) not found, using module: OpenMPI . . .
+(ICER v.) 
+
+
+Lmod Warning: Input module (hdf5) not found, using module: HDF5 . . . (ICER
+v.) 
+
+
+Lmod Warning: Input module (python) not found, using module: Python . . .
+(ICER v.) 
+
+
+Running with 2 processes and message size 2
+Message Size: 2 bytes
+Processes: 2
+Time Taken: 3.38033e-05 seconds
+Bandwidth: 59165.8 bytes/second
+Latency: 1.69016e-05 seconds
+
+Running with 4 processes and message size 2
+Message Size: 2 bytes
+Processes: 4
+Time Taken: 0.000731306 seconds
+Bandwidth: 2734.83 bytes/second
+Latency: 0.000182827 seconds
+
+Running with 8 processes and message size 2
+Message Size: 2 bytes
+Processes: 8
+Time Taken: 0.000473463 seconds
+Bandwidth: 4224.2 bytes/second
+Latency: 5.91829e-05 seconds
+
+Running with 16 processes and message size 2
+Message Size: 2 bytes
+Processes: 16
+Time Taken: 0.000475395 seconds
+Bandwidth: 4207.02 bytes/second
+Latency: 2.97122e-05 seconds
+
+Running with 32 processes and message size 2
+Message Size: 2 bytes
+Processes: 32
+Time Taken: 0.00051137 seconds
+Bandwidth: 3911.06 bytes/second
+Latency: 1.59803e-05 seconds
+
+Running with 64 processes and message size 2
+Message Size: 2 bytes
+Processes: 64
+Time Taken: 0.000925741 seconds
+Bandwidth: 2160.43 bytes/second
+Latency: 1.44647e-05 seconds
+
+Running with 2 processes and message size 4
+Message Size: 4 bytes
+Processes: 2
+Time Taken: 8.64165e-05 seconds
+Bandwidth: 46287.5 bytes/second
+Latency: 4.32082e-05 seconds
+
+Running with 4 processes and message size 4
+Message Size: 4 bytes
+Processes: 4
+Time Taken: 0.000464268 seconds
+Bandwidth: 8615.71 bytes/second
+Latency: 0.000116067 seconds
+
+Running with 8 processes and message size 4
+Message Size: 4 bytes
+Processes: 8
+Time Taken: 0.000510453 seconds
+Bandwidth: 7836.17 bytes/second
+Latency: 6.38067e-05 seconds
+
+Running with 16 processes and message size 4
+Message Size: 4 bytes
+Processes: 16
+Time Taken: 0.000538111 seconds
+Bandwidth: 7433.41 bytes/second
+Latency: 3.36319e-05 seconds
+
+Running with 32 processes and message size 4
+Message Size: 4 bytes
+Processes: 32
+Time Taken: 0.000863782 seconds
+Bandwidth: 4630.8 bytes/second
+Latency: 2.69932e-05 seconds
+
+Running with 64 processes and message size 4
+Message Size: 4 bytes
+Processes: 64
+Time Taken: 0.00107056 seconds
+Bandwidth: 3736.37 bytes/second
+Latency: 1.67275e-05 seconds
+
+Running with 2 processes and message size 8
+Message Size: 8 bytes
+Processes: 2
+Time Taken: 3.62797e-05 seconds
+Bandwidth: 220509 bytes/second
+Latency: 1.81398e-05 seconds
+
+Running with 4 processes and message size 8
+Message Size: 8 bytes
+Processes: 4
+Time Taken: 0.000643549 seconds
+Bandwidth: 12431.1 bytes/second
+Latency: 0.000160887 seconds
+
+Running with 8 processes and message size 8
+Message Size: 8 bytes
+Processes: 8
+Time Taken: 0.000538773 seconds
+Bandwidth: 14848.6 bytes/second
+Latency: 6.73466e-05 seconds
+
+Running with 16 processes and message size 8
+Message Size: 8 bytes
+Processes: 16
+Time Taken: 0.000512321 seconds
+Bandwidth: 15615.2 bytes/second
+Latency: 3.20201e-05 seconds
+
+Running with 32 processes and message size 8
+Message Size: 8 bytes
+Processes: 32
+Time Taken: 0.000643219 seconds
+Bandwidth: 12437.4 bytes/second
+Latency: 2.01006e-05 seconds
+
+Running with 64 processes and message size 8
+Message Size: 8 bytes
+Processes: 64
+Time Taken: 0.000914171 seconds
+Bandwidth: 8751.09 bytes/second
+Latency: 1.42839e-05 seconds
+
+Running with 2 processes and message size 16
+Message Size: 16 bytes
+Processes: 2
+Time Taken: 0.000167016 seconds
+Bandwidth: 95799.2 bytes/second
+Latency: 8.3508e-05 seconds
+
+Running with 4 processes and message size 16
+Message Size: 16 bytes
+Processes: 4
+Time Taken: 0.000553726 seconds
+Bandwidth: 28895.1 bytes/second
+Latency: 0.000138432 seconds
+
+Running with 8 processes and message size 16
+Message Size: 16 bytes
+Processes: 8
+Time Taken: 0.000671593 seconds
+Bandwidth: 23823.9 bytes/second
+Latency: 8.39492e-05 seconds
+
+Running with 16 processes and message size 16
+Message Size: 16 bytes
+Processes: 16
+Time Taken: 0.000598148 seconds
+Bandwidth: 26749.2 bytes/second
+Latency: 3.73843e-05 seconds
+
+Running with 32 processes and message size 16
+Message Size: 16 bytes
+Processes: 32
+Time Taken: 0.000740343 seconds
+Bandwidth: 21611.6 bytes/second
+Latency: 2.31357e-05 seconds
+
+Running with 64 processes and message size 16
+Message Size: 16 bytes
+Processes: 64
+Time Taken: 0.00100434 seconds
+Bandwidth: 15930.9 bytes/second
+Latency: 1.56928e-05 seconds
+
+Running with 2 processes and message size 32
+Message Size: 32 bytes
+Processes: 2
+Time Taken: 3.72101e-05 seconds
+Bandwidth: 859982 bytes/second
+Latency: 1.8605e-05 seconds
+
+Running with 4 processes and message size 32
+Message Size: 32 bytes
+Processes: 4
+Time Taken: 0.000491382 seconds
+Bandwidth: 65122.5 bytes/second
+Latency: 0.000122845 seconds
+
+Running with 8 processes and message size 32
+Message Size: 32 bytes
+Processes: 8
+Time Taken: 0.00042438 seconds
+Bandwidth: 75404 bytes/second
+Latency: 5.30476e-05 seconds
+
+Running with 16 processes and message size 32
+srun: Job 32178093 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=32178093.27
+Message Size: 32 bytes
+Processes: 16
+Time Taken: 0.000663062 seconds
+Bandwidth: 48261 bytes/second
+Latency: 4.14414e-05 seconds
+
+Running with 32 processes and message size 32
+Message Size: 32 bytes
+Processes: 32
+Time Taken: 0.000707994 seconds
+Bandwidth: 45198.1 bytes/second
+Latency: 2.21248e-05 seconds
+
+Running with 64 processes and message size 32
+Message Size: 32 bytes
+Processes: 64
+Time Taken: 0.000958149 seconds
+Bandwidth: 33397.7 bytes/second
+Latency: 1.49711e-05 seconds
+
+Running with 2 processes and message size 64
+Message Size: 64 bytes
+Processes: 2
+Time Taken: 4.31016e-05 seconds
+Bandwidth: 1.48486e+06 bytes/second
+Latency: 2.15508e-05 seconds
+
+Running with 4 processes and message size 64
+Message Size: 64 bytes
+Processes: 4
+Time Taken: 0.000376461 seconds
+Bandwidth: 170004 bytes/second
+Latency: 9.41153e-05 seconds
+
+Running with 8 processes and message size 64
+Message Size: 64 bytes
+Processes: 8
+Time Taken: 0.000449768 seconds
+Bandwidth: 142295 bytes/second
+Latency: 5.6221e-05 seconds
+
+Running with 16 processes and message size 64
+Message Size: 64 bytes
+Processes: 16
+Time Taken: 0.000672759 seconds
+Bandwidth: 95130.6 bytes/second
+Latency: 4.20475e-05 seconds
+
+Running with 32 processes and message size 64
+srun: Job 32178093 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=32178093.34
+Message Size: 64 bytes
+Processes: 32
+Time Taken: 0.000688733 seconds
+Bandwidth: 92924.3 bytes/second
+Latency: 2.15229e-05 seconds
+
+Running with 64 processes and message size 64
+Message Size: 64 bytes
+Processes: 64
+Time Taken: 0.0011572 seconds
+Bandwidth: 55306.1 bytes/second
+Latency: 1.80812e-05 seconds
+
+Running with 2 processes and message size 128
+Message Size: 128 bytes
+Processes: 2
+Time Taken: 6.12959e-05 seconds
+Bandwidth: 2.08823e+06 bytes/second
+Latency: 3.0648e-05 seconds
+
+Running with 4 processes and message size 128
+Message Size: 128 bytes
+Processes: 4
+Time Taken: 0.000545785 seconds
+Bandwidth: 234525 bytes/second
+Latency: 0.000136446 seconds
+
+Running with 8 processes and message size 128
+Message Size: 128 bytes
+Processes: 8
+Time Taken: 0.000560683 seconds
+Bandwidth: 228293 bytes/second
+Latency: 7.00854e-05 seconds
+
+Running with 16 processes and message size 128
+Message Size: 128 bytes
+Processes: 16
+Time Taken: 0.000508497 seconds
+Bandwidth: 251722 bytes/second
+Latency: 3.17811e-05 seconds
+
+Running with 32 processes and message size 128
+Message Size: 128 bytes
+Processes: 32
+Time Taken: 0.000684103 seconds
+Bandwidth: 187106 bytes/second
+Latency: 2.13782e-05 seconds
+
+Running with 64 processes and message size 128
+Message Size: 128 bytes
+Processes: 64
+Time Taken: 0.00119436 seconds
+Bandwidth: 107171 bytes/second
+Latency: 1.86618e-05 seconds
+
+Running with 2 processes and message size 256
+Message Size: 256 bytes
+Processes: 2
+Time Taken: 4.71426e-05 seconds
+Bandwidth: 5.43033e+06 bytes/second
+Latency: 2.35713e-05 seconds
+
+Running with 4 processes and message size 256
+Message Size: 256 bytes
+Processes: 4
+Time Taken: 0.000513081 seconds
+Bandwidth: 498947 bytes/second
+Latency: 0.00012827 seconds
+
+Running with 8 processes and message size 256
+Message Size: 256 bytes
+Processes: 8
+Time Taken: 0.00045858 seconds
+Bandwidth: 558244 bytes/second
+Latency: 5.73226e-05 seconds
+
+Running with 16 processes and message size 256
+Message Size: 256 bytes
+Processes: 16
+Time Taken: 0.000657245 seconds
+Bandwidth: 389505 bytes/second
+Latency: 4.10778e-05 seconds
+
+Running with 32 processes and message size 256
+Message Size: 256 bytes
+Processes: 32
+Time Taken: 0.00062954 seconds
+Bandwidth: 406646 bytes/second
+Latency: 1.96731e-05 seconds
+
+Running with 64 processes and message size 256
+srun: Job 32178093 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=32178093.47
+Message Size: 256 bytes
+Processes: 64
+Time Taken: 0.00106236 seconds
+Bandwidth: 240973 bytes/second
+Latency: 1.65994e-05 seconds
+
+Running with 2 processes and message size 512
+Message Size: 512 bytes
+Processes: 2
+Time Taken: 4.14029e-05 seconds
+Bandwidth: 1.23663e+07 bytes/second
+Latency: 2.07014e-05 seconds
+
+Running with 4 processes and message size 512
+Message Size: 512 bytes
+Processes: 4
+Time Taken: 0.00050195 seconds
+Bandwidth: 1.02002e+06 bytes/second
+Latency: 0.000125488 seconds
+
+Running with 8 processes and message size 512
+Message Size: 512 bytes
+Processes: 8
+Time Taken: 0.000399274 seconds
+Bandwidth: 1.28233e+06 bytes/second
+Latency: 4.99092e-05 seconds
+
+Running with 16 processes and message size 512
+Message Size: 512 bytes
+Processes: 16
+Time Taken: 0.000549655 seconds
+Bandwidth: 931493 bytes/second
+Latency: 3.43535e-05 seconds
+
+Running with 32 processes and message size 512
+Message Size: 512 bytes
+Processes: 32
+Time Taken: 0.000624132 seconds
+Bandwidth: 820339 bytes/second
+Latency: 1.95041e-05 seconds
+
+Running with 64 processes and message size 512
+Message Size: 512 bytes
+Processes: 64
+Time Taken: 0.000989496 seconds
+Bandwidth: 517435 bytes/second
+Latency: 1.54609e-05 seconds
+
+Running with 2 processes and message size 1024
+Message Size: 1024 bytes
+Processes: 2
+Time Taken: 9.92212e-05 seconds
+Bandwidth: 1.03204e+07 bytes/second
+Latency: 4.96106e-05 seconds
+
+Running with 4 processes and message size 1024
+Message Size: 1024 bytes
+Processes: 4
+Time Taken: 0.000580353 seconds
+Bandwidth: 1.76444e+06 bytes/second
+Latency: 0.000145088 seconds
+
+Running with 8 processes and message size 1024
+Message Size: 1024 bytes
+Processes: 8
+Time Taken: 0.000467554 seconds
+Bandwidth: 2.19012e+06 bytes/second
+Latency: 5.84442e-05 seconds
+
+Running with 16 processes and message size 1024
+Message Size: 1024 bytes
+Processes: 16
+Time Taken: 0.000505219 seconds
+Bandwidth: 2.02684e+06 bytes/second
+Latency: 3.15762e-05 seconds
+
+Running with 32 processes and message size 1024
+Message Size: 1024 bytes
+Processes: 32
+Time Taken: 0.00104417 seconds
+Bandwidth: 980687 bytes/second
+Latency: 3.26302e-05 seconds
+
+Running with 64 processes and message size 1024
+Message Size: 1024 bytes
+Processes: 64
+Time Taken: 0.0010181 seconds
+Bandwidth: 1.0058e+06 bytes/second
+Latency: 1.59078e-05 seconds
+
+Running with 2 processes and message size 2048
+Message Size: 2048 bytes
+Processes: 2
+Time Taken: 6.41039e-05 seconds
+Bandwidth: 3.19482e+07 bytes/second
+Latency: 3.20519e-05 seconds
+
+Running with 4 processes and message size 2048
+Message Size: 2048 bytes
+Processes: 4
+Time Taken: 0.000427322 seconds
+Bandwidth: 4.79264e+06 bytes/second
+Latency: 0.00010683 seconds
+
+Running with 8 processes and message size 2048
+Message Size: 2048 bytes
+Processes: 8
+Time Taken: 0.000673694 seconds
+Bandwidth: 3.03996e+06 bytes/second
+Latency: 8.42117e-05 seconds
+
+Running with 16 processes and message size 2048
+Message Size: 2048 bytes
+Processes: 16
+Time Taken: 0.000637515 seconds
+Bandwidth: 3.21247e+06 bytes/second
+Latency: 3.98447e-05 seconds
+
+Running with 32 processes and message size 2048
+Message Size: 2048 bytes
+Processes: 32
+Time Taken: 0.000707304 seconds
+Bandwidth: 2.8955e+06 bytes/second
+Latency: 2.21033e-05 seconds
+
+Running with 64 processes and message size 2048
+Message Size: 2048 bytes
+Processes: 64
+Time Taken: 0.0011438 seconds
+Bandwidth: 1.79052e+06 bytes/second
+Latency: 1.78719e-05 seconds
+
+Running with 2 processes and message size 4096
+Message Size: 4096 bytes
+Processes: 2
+Time Taken: 6.97607e-05 seconds
+Bandwidth: 5.8715e+07 bytes/second
+Latency: 3.48804e-05 seconds
+
+Running with 4 processes and message size 4096
+Message Size: 4096 bytes
+Processes: 4
+Time Taken: 0.000436018 seconds
+Bandwidth: 9.3941e+06 bytes/second
+Latency: 0.000109005 seconds
+
+Running with 8 processes and message size 4096
+Message Size: 4096 bytes
+Processes: 8
+Time Taken: 0.000516911 seconds
+Bandwidth: 7.92399e+06 bytes/second
+Latency: 6.46139e-05 seconds
+
+Running with 16 processes and message size 4096
+Message Size: 4096 bytes
+Processes: 16
+Time Taken: 0.00048843 seconds
+Bandwidth: 8.38605e+06 bytes/second
+Latency: 3.05269e-05 seconds
+
+Running with 32 processes and message size 4096
+Message Size: 4096 bytes
+Processes: 32
+Time Taken: 0.000734446 seconds
+Bandwidth: 5.577e+06 bytes/second
+Latency: 2.29514e-05 seconds
+
+Running with 64 processes and message size 4096
+Message Size: 4096 bytes
+Processes: 64
+Time Taken: 0.000839116 seconds
+Bandwidth: 4.88133e+06 bytes/second
+Latency: 1.31112e-05 seconds
+
