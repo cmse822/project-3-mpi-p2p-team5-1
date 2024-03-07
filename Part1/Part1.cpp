@@ -5,6 +5,7 @@
 #include <mpi.h>
 #include <iostream>
 #include <cmath>
+#include <fstream>
 
 int main(int argc, char *argv[]) {
     MPI_Init(&argc, &argv);
@@ -17,6 +18,9 @@ int main(int argc, char *argv[]) {
         MPI_Abort(MPI_COMM_WORLD, 1);
     }
     const int PING_PONG_LIMIT = 100;
+    std::ofstream myfile;
+    myfile.open("output_q4.csv");
+    myfile << "Message Size (bytes),Time (seconds)\n";
     for (int size = 2; size <= 4096; size *= 2) {
         char* buffer = new char[size];
         double start_time, end_time;
@@ -34,18 +38,16 @@ int main(int argc, char *argv[]) {
         if (world_rank == 0) {
             std::cout << "Message size: " << size << " bytes, "
                       << "Time: " << (end_time - start_time) << " seconds" << std::endl;
+            myfile << size << "," << (end_time - start_time) << "\n";
         }
         delete[] buffer;
     }
+    myfile.close();
     MPI_Finalize();
     return 0;
 }
-// mpic++ Part1_Q_1_2.cpp  -o ping_pong_q1
-// mpiexec -n 2 ./ping_pong_q1
-
-
 // Here we allocate the task on two different nodes:
-
-// salloc -N 2 --ntasks-per-node=1 --time=00:10:00
-// mpic++ Part1_Q_1_2.cpp -o ping_pong_q4
-// mpiexec -n 2 ./ping_pong_q4
+// salloc -N 1 --ntasks-per-node=2 --time=00:10:00 commands for q2
+// salloc -N 2 --ntasks-per-node=1 --time=00:10:00 commands for q4
+// mpic++ Part1.cpp -o part1.o
+// srun mpiexec -n 2 ./part1.o

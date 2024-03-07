@@ -1,6 +1,7 @@
 #include <mpi.h>
 #include <iostream>
 #include <cmath>
+#include <fstream>
 
 int main(int argc, char *argv[]) {
     MPI_Init(&argc, &argv);
@@ -13,6 +14,9 @@ int main(int argc, char *argv[]) {
         MPI_Abort(MPI_COMM_WORLD, 1);
     }
     const int PING_PONG_LIMIT = 100;
+    std::ofstream myfile;
+    myfile.open("output_q2.csv");
+    myfile << "Message Size (bytes),Time (seconds)\n";
     for (int size = 2; size <= 4096; size *= 2) {
         char* buffer = new char[size];
         double start_time, end_time;
@@ -37,9 +41,11 @@ int main(int argc, char *argv[]) {
         if (world_rank == 0) {
             std::cout << "Non-blocking. Message size: " << size << " bytes, "
                       << "Time: " << (end_time - start_time) << " seconds" << std::endl;
+            myfile << size << "," << (end_time - start_time) << "\n";
         }
         delete[] buffer;
     }
+    myfile.close();
     MPI_Finalize();
     return 0;
 }

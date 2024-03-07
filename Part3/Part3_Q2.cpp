@@ -1,6 +1,5 @@
 #include <mpi.h>
 #include <iostream>
-#include <cstdlib>
 #include <cmath> 
 #include <fstream> 
 using namespace std;
