@@ -53,7 +53,6 @@ int main(int argc, char *argv[]) {
     MPI_Finalize();
     return 0;
 }
-
 // Here we allocate the task on two different nodes:
 // salloc -N 1 --ntasks-per-node=2 --time=00:10:00 commands for q2
 // salloc -N 2 --ntasks-per-node=1 --time=00:10:00 commands for q4
