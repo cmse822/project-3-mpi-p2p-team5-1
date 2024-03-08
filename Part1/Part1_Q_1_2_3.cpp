@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
     }
     const int PING_PONG_LIMIT = 100;
     std::ofstream myfile;
-    myfile.open("output_q4.csv");
+    myfile.open("output_q3.csv");
     myfile << "Message Size (bytes),Time (seconds),Total Data Sent and Received (bytes)\n";
     for (int size = 2; size <= 4096; size *= 2) {
         char* buffer = new char[size];
