@@ -1,4 +1,4 @@
-Message Size (bytes),Time (seconds),
+Message Size (bytes),Time (seconds),Total Data Sent and Received (bytes)
 2,0.000911562,400
 4,0.000260717,800
 8,0.000164039,1600

@@ -1,3 +1,5 @@
+// Part 4 fixed //
+
 #include <mpi.h>
 #include <iostream>
 #include <cmath> 
@@ -27,7 +29,7 @@ int main(int argc, char *argv[]) {
     MPI_Status send_status, recv_status;
 
     std::ofstream myfile;
-    myfile.open("output.csv", ios::out | ios::app);
+    myfile.open("output_p4.csv", ios::out | ios::app);
 
     double start_time, end_time;
 
@@ -44,20 +46,18 @@ int main(int argc, char *argv[]) {
     end_time = MPI_Wtime();
 
     if (world_rank == 0) {
-            cout << "Message Size: " << message_size << " bytes" << endl;
-            cout << "Processes: " << world_size << endl;
+        cout << "Message Size: " << message_size << " bytes" << endl;
+        cout << "Processes: " << world_size << endl;
+        cout << "Time Taken: " << (end_time - start_time) << " seconds" << endl;
+        double bandwidth = message_size / (end_time - start_time);
+        double latency = (end_time - start_time) / world_size;
 
-            cout << "Time Taken: " << (end_time - start_time) << " seconds" << endl;
+        cout << "Bandwidth: " << bandwidth << " bytes/second" << endl;
+        cout << "Latency: " << latency << " seconds" << endl;   
+        cout << endl;
 
-            double bandwidth = message_size / (end_time - start_time);
-            double latency = (end_time - start_time) / world_size;
-
-            cout << "Bandwidth: " << bandwidth << " bytes/second" << endl;
-            cout << "Latency: " << latency << " seconds" << endl;   
-            cout << endl;
-
-            myfile << message_size << "," << world_size << "," << (end_time - start_time) << bandwidth << "," << latency << "\n";
-        }
+        myfile << message_size << "," << world_size << "," << (end_time - start_time) << "," << bandwidth << "," << latency << "\n";
+    }
 
     delete[] message;
     delete[] recv_buffer;
@@ -65,4 +65,3 @@ int main(int argc, char *argv[]) {
     MPI_Finalize();
     return 0;
 }
-
