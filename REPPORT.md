@@ -8,6 +8,9 @@ We plotted the total time for execution of 100 iterations versus the message siz
 
 ![Time vs Message size in log-log](Part1/part1_total.png "Time vs Message size in log-log")
 
+If we divide the total time by the total amount of bytes, the plot will look like the plot below.
+
+![Time/byte vs Message size in log-log](Part1/part1_perbyte.png "Time/byte vs Message size in log-log")
 
 ## Part 2:
 
