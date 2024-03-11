@@ -2,6 +2,13 @@
 
 ## Part 1:
 
+The file corresponding to the blocking Ping Pong is in the Part 1 folder. Basically, we made sure that we have 2 processes, and then the first process sends a message to the second process and waits until the message is received and sent back. The second process waits to receive a message from the first process and then sends it back. For each message size, the total data sent and received in one iteration is 2 times the message size.
+
+We plotted the total time for execution of 100 iterations versus the message size in bytes. We can conclude from this plot that when the 2 processes are on different nodes, the communication takes more time, as it needs to communicate between nodes, which is way slower than communicating inside 1 node.
+
+![Time vs Message size in log-log](Part1/part1_total.png "Time vs Message size in log-log")
+
+
 ## Part 2:
 
 ## Part 3:
