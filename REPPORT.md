@@ -19,9 +19,11 @@ If we divide the total time by the total amount of bytes, the plot will look lik
 After doing the same thing for non-blocking Ping Pong, we get the following plots.
 
 For total time of execution:
+
 ![Time vs Message size in log-log](Part2/part2_total.png "Time vs Message size in log-log")
 
 Per byte:
+
 ![Time/byte vs Message size in log-log](Part2/part2_perbyte.png "Time/byte vs Message size in log-log")
 
 We can see that the execution becomes a little faster (1 order of magnitude), but the fluctuations in the curve are more visible, this is because of the non-blocking message send/receive, which can be more unpredictable than blocking communication.
