@@ -16,6 +16,16 @@ If we divide the total time by the total amount of bytes, the plot will look lik
 
 ## Part 2:
 
+After doing the same thing for non-blocking Ping Pong, we get the following plots.
+
+For total time of execution:
+![Time vs Message size in log-log](Part2/part2_total.png "Time vs Message size in log-log")
+
+Per byte:
+![Time/byte vs Message size in log-log](Part2/part2_perbyte.png "Time/byte vs Message size in log-log")
+
+We can see that the execution becomes a little faster (1 order of magnitude), but the fluctuations in the curve are more visible, this is because of the non-blocking message send/receive, which can be more unpredictable than blocking communication.
+
 ## Part 3:
 
 In this section, we've implemented the MPI ring shift using the MPI_Sendrcv() commands on a series of different process counts to compute bandwidth as a function of message sizes. Below are plots on log-log scale, as well as linear, for better interpretability. The general trends indicate, with the exception of a processor count of two, a direct increasing power-law relationship between bandwidth and message size. Process count two shows a lot of variability over the message sizes.  Initially, the start-up costs of communication are less for lower process counts, like for process count two, thus showing that they are able to communicate more information at a faster rate than the other process counts.  The main point here being that commnication between two processes can achieve notably higher bandwidth due to fewer communication costs among the different nodes.  Above two process counts, the costs appear to scale relatively similarly.
