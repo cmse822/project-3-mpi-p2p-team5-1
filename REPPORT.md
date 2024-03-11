@@ -6,9 +6,11 @@ The file corresponding to the blocking Ping Pong is in the Part 1 folder. Basica
 
 We plotted the total time for execution of 100 iterations versus the message size in bytes. We can conclude from this plot that when the 2 processes are on different nodes, the communication takes more time, as it needs to communicate between nodes, which is way slower than communicating inside 1 node.
 
+The other thing we can notice here is that for 2 processes on 1 node, at the very end of the curve, the total time increases which can be because of the allocated space for the message. It might get full if the message is too large, which in turn can increase the execution time.
+
 ![Time vs Message size in log-log](Part1/part1_total.png "Time vs Message size in log-log")
 
-If we divide the total time by the total amount of bytes, the plot will look like the plot below.
+If we divide the total time by the total amount of bytes, the plot will look like the plot below. It looks like with increasing size of the message, the time of execution per byt of a message decreases. We see the pverflow issue for the message size  (very tail of the plot) for 2 processes on 1 node.
 
 ![Time/byte vs Message size in log-log](Part1/part1_perbyte.png "Time/byte vs Message size in log-log")
 
