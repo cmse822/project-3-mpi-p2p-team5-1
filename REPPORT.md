@@ -2,7 +2,31 @@
 
 ## Part 1:
 
+The file corresponding to the blocking Ping Pong is in the Part 1 folder. Basically, we made sure that we have 2 processes, and then the first process sends a message to the second process and waits until the message is received and sent back. The second process waits to receive a message from the first process and then sends it back. For each message size, the total data sent and received in one iteration is 2 times the message size.
+
+We plotted the total time for execution of 100 iterations versus the message size in bytes. We can conclude from this plot that when the 2 processes are on different nodes, the communication takes more time, as it needs to communicate between nodes, which is way slower than communicating inside 1 node.
+
+The other thing we can notice here is that for 2 processes on 1 node, at the very end of the curve, the total time increases which can be because of the allocated space for the message. It might get full if the message is too large, which in turn can increase the execution time.
+
+![Time vs Message size in log-log](Part1/part1_total.png "Time vs Message size in log-log")
+
+If we divide the total time by the total amount of bytes, the plot will look like the plot below. It looks like with increasing size of the message, the time of execution per byt of a message decreases. We see the pverflow issue for the message size  (very tail of the plot) for 2 processes on 1 node.
+
+![Time/byte vs Message size in log-log](Part1/part1_perbyte.png "Time/byte vs Message size in log-log")
+
 ## Part 2:
+
+After doing the same thing for non-blocking Ping Pong, we get the following plots.
+
+For total time of execution:
+
+![Time vs Message size in log-log](Part2/part2_total.png "Time vs Message size in log-log")
+
+Per byte:
+
+![Time/byte vs Message size in log-log](Part2/part2_perbyte.png "Time/byte vs Message size in log-log")
+
+We can see that the execution becomes a little faster (1 order of magnitude), but the fluctuations in the curve are more visible, this is because of the non-blocking message send/receive, which can be more unpredictable than blocking communication.
 
 ## Part 3:
 
